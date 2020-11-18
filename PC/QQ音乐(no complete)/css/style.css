@@ -1,0 +1,142 @@
+/* css reset css初始化代码 */
+body {margin:0; padding:0; font:12px/1.5 "微软雅黑",\5b8b\4f53,Arial,sans-serif; color: #3b3b3b;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p,table{padding:0; margin:0;}
+table,td,tr,th{font-size:12px;}
+ol,ul,li{list-style:none;}
+li{list-style-type:none;}
+img{vertical-align:top;border:0;}
+h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight:normal;}
+address,cite,code,em,th,i{font-weight:normal; font-style:normal;}
+.clearfix{*zoom:1;}
+.clearfix:after{display:block; overflow:hidden; clear:both; height:0; visibility:hidden; content:".";}
+a {color:#252525; text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {color:#ba2636;text-decoration:underline;}
+a:active {color:#ba2636;}
+body a:focus{outline: none;}
+textarea,input,button{outline: none;}
+
+
+/*版心居中*/
+.w{
+	width: 1250px;
+	margin: 0 auto;
+}
+
+/*头部导航部分开始*/
+.header{
+	height: 142px;
+}
+.header .header_T{
+	height: 90px;
+	border-bottom: 1px solid #f2f2f2;
+}
+.header .header_T li{
+	float: left;
+	position: relative;
+}
+.header .header_T li a{
+	display: inline-block;
+	padding: 0 20px;
+	line-height: 90px;
+	font-size: 17px;
+}
+.header .header_T li:first-child a h1 img{
+	margin: 21px 0 0 0;
+}
+.header .header_T li:first-child a:hover{
+	background-color: #fff;
+}
+.header .header_T li:nth-child(7) input{
+	width: 170px;
+	height: 36px;
+	padding-left: 10px;
+	padding-right: 38px;
+	border: 1px solid #c9c9c9;
+	border-radius: 5px;
+	margin: 27px 0 0 0;
+	font-size: 12px;
+}
+.header .header_T li:nth-child(7){
+	margin-right: 20px;
+}
+.header .header_T li:nth-child(7) button{
+	display: inline-block;	
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 38px;
+	right: 10px;
+	border: 0;
+	background: url(../images/icon_sprite.png) no-repeat 0 -40px;
+}
+.header .header_T li:nth-child(7) button:hover{
+	background-position: 0 -60px;
+}
+.header .header_T li:nth-child(6){
+	margin-right: 20px;
+}
+.header .header_T li:nth-child(8) a{
+	padding-left: 0;
+	font-size: 16px;
+}
+.header .header_T li:nth-child(9) a,.header .header_T li:nth-child(10) a{
+	padding: 0;
+	font-size: 14px;
+}
+.header .header_T li:nth-child(9) a{
+	width: 111px;
+	height: 38px;
+	line-height: 38px;
+	border-radius: 2px;
+	margin-top: 26px;
+	text-align: center;
+	color: #fff;
+	background-color: #31c27c;
+}
+.header .header_T li:nth-child(10) a{
+	width: 82px;
+	height: 36px;
+	line-height: 38px;
+	text-align: center;
+	border: 1px solid #c9c9c9;
+	margin: 27px 0 0 10px;
+}
+.header .header_T li a:hover{
+	text-decoration: none;
+	color: #31c27c;
+}
+.header .header_T li:nth-child(2) a{
+	background-color: #31c27c;
+	color: #fff;
+}
+.header .header_T li:nth-child(6){
+	margin-right: 65px;
+}
+.header .header_T li:nth-child(9) a:hover{
+	color: #fff;
+}
+.header .header_T li:nth-child(10) a:hover{
+	color: #333;
+	background-color: #ededed;
+}
+.header .header_T li:nth-child(4){
+	background: url(../images/mark_1.png) no-repeat right 21px;
+	background-size: 36px 14px;
+}
+/*头部导航部分结束*/
+
+/*playList部分开始*/
+/*playList部分结束*/
+
+/*newstart部分开始*/
+/*newstart部分结束*/
+
+/*推荐部分(tuijian)开始*/
+/*推荐部分(tuijian)结束*/
+
+/*新歌首发（albumFirst）部分开始*/
+/*新歌首发（albumFirst）部分结束*/
+
+/*MV部分开始*/
+/*MV部分结束*/

@@ -1,0 +1,240 @@
+@import "common";
+@baseFont:50;
+body{
+    min-width: 320px;
+    background-color: #f7f7f7;
+    font-family: Arial,Helvetica,STHeiTi,sans-serif;
+    line-height: 1.5;  
+    padding-bottom: 4rem;
+}
+header{
+    width: 15rem;
+    margin:0 auto;
+    height: 178rem / @baseFont;
+    background-color: #ffdb47;
+    padding: 0 24rem / @baseFont;
+    .top{
+        width: 100%;
+        height: 88rem / @baseFont;
+        display: flex;
+        justify-content: space-between;
+        a{
+            &:nth-child(1),&:nth-child(3){
+                width:57rem / @baseFont;
+                height: 100%;
+                text-align: center;
+                img{
+                    width: 36rem / @baseFont;
+                    margin-top: 20rem / @baseFont;
+                }
+            }
+            &:nth-child(2){
+                width: 467rem / @baseFont;
+                height: 55rem / @baseFont;
+                align-self: center;
+                img{
+                    width: 100%;
+                }
+            }
+        }     
+    }
+    .search{
+        height: 90rem / @baseFont;
+        display: flex;
+        align-items: center;
+        a{
+            flex:1;
+            height: 64rem / @baseFont;
+            line-height:  64rem / @baseFont;
+            background: #fff url(../images/search_icon.png) no-repeat 23rem / @baseFont center;
+            background-size: 36rem / @baseFont 36rem / @baseFont;
+            border-radius: 32rem / @baseFont;
+            font-size: 26rem / @baseFont;
+            color:#7b7b7c;
+            padding-left: 66rem / @baseFont;
+        }
+    }
+}
+.mainCon{
+    width: 15rem;
+    margin:0 auto;
+    .banner{
+        width:100%;
+        height: 260rem / @baseFont;
+        background: url(../images/banner_bg.png) no-repeat ;
+        background-size: 100%;
+        .bannerCon{
+            width: 703rem / @baseFont;
+            height: 100%;
+            border-radius:20rem / @baseFont;
+            overflow: hidden;
+            margin:0 auto;
+            position: relative;
+            ul{
+                width: 600%;
+                height: 100%;
+                list-style: none;
+                margin-left: -100%;
+                li{
+                    width:16.66%;
+                    height: 100%;
+                    float: left;
+                    position: relative;
+                }
+            }
+            ol{
+                list-style: none;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 6px;
+                margin:0;
+                padding:0;
+                li{
+                    width: 5px;
+                    height: 4px;
+                    border-radius: 2px;
+                    background-color: rgba(0,0,0,0.5);
+                    float: left;
+                    margin-right: 8px;
+                    transition: all .4s;
+                    &.current{
+                        width: 9px;
+                        background-color: #fff;
+                    }
+                }
+            }
+            img{
+               width: 100%;
+               position: absolute;
+               left: 0;
+               bottom: 0;
+            }
+        }
+    }
+    // 好货开抢
+    .hor-view{
+        width: 15rem;
+        height: 7rem;
+        display: flex;
+        a{
+            flex: 1;
+            img{
+                width: 100%;
+                height: 7rem;
+            }
+        }
+    }
+    // 导航部分
+    nav{
+        width: 15rem;
+        height: 320rem / @baseFont;
+        // background: url(../images/nav_bg.jpg) no-repeat;
+        // background-size: 15rem 320rem / @baseFont;
+        .navCon{
+            width: 100%;
+            a{
+                width: 3rem;
+                height: 142rem / @baseFont;
+                float: left;
+                text-align: center;
+                color: #6e6f6d;
+                img{
+                    width: 84rem / @baseFont;
+                    height: 84rem / @baseFont;
+                    display: block;
+                    margin:24rem / @baseFont auto 0;
+                }
+                p{
+                    font-size:22rem / @baseFont;
+                    width: 3rem;
+                }
+            }
+        }
+    }
+    // 新人专享
+    .new-exclusive{
+        width: 15rem;
+        height: 234rem / @baseFont;
+        margin-top: 26rem / @baseFont;
+        display: flex;
+        a{
+            &:nth-child(1){
+                width: 7.5rem;
+            }
+            &:nth-child(2),&:nth-child(3){
+                width: 186rem / @baseFont;
+            }
+            &:nth-child(-n+2){
+                border-right:2px solid #f2f2f2;
+            }
+            img{
+                width: 100%;
+                height: 234rem / @baseFont;
+            }
+        }
+    }
+    // 底部固定导航
+    footer{
+        width: 15rem;
+        height: 2rem;
+        background-color: #fff;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom:0;
+        display: flex;
+        a{
+            width: 3rem;
+            height: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            img{
+                width: 48rem / @baseFont;
+                height: 48rem / @baseFont;
+            }
+            span{
+                font-size: 20rem / @baseFont;
+            }
+            &:nth-child(1){
+                font-weight: bold;
+                color: #000;
+            }
+        }
+    } 
+    // 登录
+    .login{
+        width: 15rem;
+        height: 90rem / @baseFont;
+        background-color: rgba(0,0,0,0.75);
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom:2rem;
+        padding:0 24rem / @baseFont;
+        color: #fff;
+        line-height: 90rem / @baseFont;
+        font-size: 26rem / @baseFont;
+        p{
+            float: left;
+        }
+        .loginBtn{
+            width: 170rem / @baseFont;
+            height: 50rem / @baseFont;
+            background-color: #ffdb47;
+            border:1px solid #1d2131;
+            border-radius: 8rem / @baseFont;
+            float: right;
+            margin-top: 18rem / @baseFont;
+            line-height: 50rem / @baseFont;
+            text-align: center;
+            color: #222;
+        }
+    }
+
+
+    
+}

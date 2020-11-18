@@ -1,0 +1,62 @@
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+    margin: 0;
+    padding: 0
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0
+}
+
+button, html input[type=button], input[type=submit] {
+    -webkit-apperance: button;
+    cursor: pointer
+}
+
+button[disabled], html input[disabled] {
+    cursor: default
+}
+
+ol, ul {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+em, i, u {
+    font-style: normal
+}
+.w {    /* 版心 并且居中对齐*/
+    width: 1190px;
+    margin: 0 auto;
+}
+body {
+    font: 14px/150% "微软雅黑", Arial, Verdana, "\5b8b\4f53";
+    color: #3c3c3c;
+    background-color: #f4f4f4;
+}
+
+a {
+    color: #6c6c6c;
+    text-decoration: none
+}
+
+a:hover {
+    color: #ff5000;
+}
+
+input{
+    outline: none;
+}
+body a:hover {
+    color: #F40;
+    text-decoration: none;
+}

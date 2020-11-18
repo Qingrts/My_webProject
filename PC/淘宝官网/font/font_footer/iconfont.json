@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "979",
+      "name": "付款方式",
+      "font_class": "fukuanfangshi",
+      "unicode": "f0032",
+      "unicode_decimal": 983090
+    },
+    {
+      "icon_id": "980",
+      "name": "淘宝特色",
+      "font_class": "taobaotese",
+      "unicode": "f0033",
+      "unicode_decimal": 983091
+    },
+    {
+      "icon_id": "9244338",
+      "name": "保障",
+      "font_class": "shiliangzhinengduixiang",
+      "unicode": "e6cb",
+      "unicode_decimal": 59083
+    },
+    {
+      "icon_id": "9674460",
+      "name": "帮 助",
+      "font_class": "bangzhu",
+      "unicode": "e501",
+      "unicode_decimal": 58625
+    }
+  ]
+}

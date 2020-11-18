@@ -1,0 +1,16 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7712222",
+      "name": "投诉与建议",
+      "font_class": "tousuyujianyi",
+      "unicode": "e729",
+      "unicode_decimal": 59177
+    }
+  ]
+}

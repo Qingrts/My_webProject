@@ -1,0 +1,15 @@
+.top_nav{
+	height: 32px;
+	background-color: #f2f2f2;
+}
+.con_left > li,.con_right > li {
+	float: left;
+	padding: 0 10px;
+}
+.con_left > li > a, .con_right > li > a {
+	font-size: 12px;
+	line-height: 32px;
+}
+.con_left > li:last-child{
+	margin-right: 40%;
+}

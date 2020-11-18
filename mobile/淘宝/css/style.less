@@ -1,0 +1,635 @@
+@import "common.less";
+@baseFont: 50;
+
+body,html{
+  min-width: 320px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  font-family: h5index-iconfont;
+}
+
+ul,li,ol{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+div{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../font/iconfont.woff2') format('woff2'),
+      url('../font/iconfont.woff') format('woff'),
+      url('../font/iconfont.ttf') format('truetype'),
+      url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container{
+  width: 15rem;
+  margin: 0 auto;
+  padding-top: 37px;
+  overflow: hidden;
+  // 头部固定搜索框
+  header{
+    width: 15rem;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    overflow: hidden;
+    .top_serach{
+      height: 25px;
+      padding: 6px 9px 6px 42px;
+      background: #ff852a url(../images/logo.png) no-repeat 9rem / @baseFont center;
+      background-size: 27px 20px;
+      .search_store{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #ff4e22;
+        border-radius: 4px;
+        font-size: 12px;
+        text-align: center;
+        .input_inner{
+          height: 25px;
+          line-height: 25px;
+          font-family: h5index-iconfont;
+          &::after{
+            content: "寻找宝贝店铺";
+            display: inline-block;
+            font-size: 13px;
+            padding-left: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  // banner轮播图
+  .banner{
+    height: 238rem / @baseFont;
+    .bannerCon{
+      height: 100%;
+      position: relative;
+      width: 15rem;
+      overflow: hidden;
+      ul{
+        width: 1000%;
+        margin-left: -100%;
+        li{
+          float: left;
+          img{
+            width: 15rem;
+            height: 238rem / @baseFont;
+          }
+        }
+      }
+      ol{
+        height: 32rem / @baseFont;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        li{
+          float: left;
+          width: 8rem / @baseFont;
+          height: 8rem / @baseFont;
+          margin: 0 2rem / @baseFont;
+          background-color: rgba(255, 255, 255, .3);
+          border-radius: 4em / @baseFont;
+          &.current{
+            background-color: #ff5000;
+          }
+        }
+        
+      }
+    }
+  }
+
+  // nav部分
+  nav{
+    width: 15rem;
+    height: 197px;
+    position: relative;
+    background-color: #fff;
+    .top_liuban{
+      width: 15rem;
+      height: 30rem / @baseFont;
+      background:url(../images/TB1vMMwChTpK1RjSZFMXXbG_VXa-1125-30.png) no-repeat center center;
+      background-size: contain;
+      position: absolute;
+      top: -20rem / @baseFont;
+      left: 0;
+      z-index: 999;
+    }
+    .navCon{
+      width: 15rem;
+      height: 177px;
+      overflow: hidden;
+      position: relative;
+      .navCon_list{
+        width: 750px;
+        display: block;
+        padding-right: 72.5px;
+        box-sizing: border-box;
+        background-color: #fff;
+        font-size: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        a{
+          display: inline-block;
+          width: 61px;
+          height: 78px;
+          margin-left: 11.5px;
+          padding: 8px 0;
+          font-size: 12px;
+          color: #666;
+          text-align: center;
+          line-height: 16px;
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+    .scroll_line_container{
+      width: 100%;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .scroll_line{
+        width: 50px;
+        height: 3px;
+        background-color: rgb(212, 216, 222);
+        border-radius: 4px;
+        .scrolling{
+          width: 20px;
+          height: 3px;
+          background-color: #ff6d2a;
+        }
+      }
+    }
+  }
+
+  // 头条部分
+  .goods_modules{
+    margin: 12rem / @baseFont 10rem / @baseFont;
+    background-color: #fff;
+    border-radius: 20rem / @baseFont;
+    font-size: 0;
+    .goods_modules_top{
+      display: inline-block;
+      width: 365rem / @baseFont;
+      height: 770rem / @baseFont;
+      padding-top: 20rem / @baseFont;
+      position: relative;
+      border-right: 1rem / @baseFont solid #eee;
+      box-sizing: border-box;
+      .module_item{
+        width: 50%;
+        float: left;
+        padding-top: 52rem / @baseFont;
+        height: 190rem / @baseFont;
+        margin-bottom: 15rem / @baseFont;
+        .module_intro{
+          width: 147rem / @baseFont;
+          height: 180rem / @baseFont;
+          margin-left: 24rem / @baseFont;
+          border-radius: 10rem / @baseFont;
+          padding-top: 10rem / @baseFont;
+          .module_title{
+            font-size: 26rem / @baseFont;
+            line-height: 31rem / @baseFont;
+            padding-left: 15rem / @baseFont;
+            font-weight: bold;
+            white-space: nowrap;
+          }
+          .goods_img{
+            width: 124rem / @baseFont;
+            height: 124rem / @baseFont;
+            margin: 10rem / @baseFont auto 0;
+          }
+        }
+        &:nth-child(1){
+          background: url(../images/TB11.K2mq61gK0jSZFlXXXDKFXa-525-60.png) no-repeat 0 0;
+          background-size: 367.5rem / @baseFont 42rem / @baseFont;
+          .module_intro{
+            background-color: rgb(253, 245, 242);
+            .module_title{
+              color: rgb(254, 78, 80);
+            }
+            .goods_img{
+              background: url(../images/O1CN01Vi6B8O1ChKyrfDg4y_!!112-2-lubanu.png_125x125q90_.webp) no-repeat center;
+              background-size: contain;
+            }
+          }
+        }
+        &:nth-child(2){
+          .module_intro{
+            margin-left: 10rem / @baseFont;
+            background-color: rgb(252, 249, 243);
+            .module_title{
+              color: rgb(255, 117, 24);
+            }
+            .goods_img{
+              background: url(../images/O1CN01NZgTDE1D2rasTpZxj_!!159-2-lubanu.png_125x125q90_.webp) no-repeat center;
+              background-size: contain;
+            }
+          }
+        }
+        &:nth-child(3){
+          background: url(../images/TB1r3C2mrj1gK0jSZFOXXc7GpXa-255-60.png) no-repeat 0 0;
+          background-size: 255rem * 0.7 / @baseFont 60rem * 0.7 / @baseFont;
+          .module_intro{
+            background-color: rgb(255, 248, 250);
+            .module_title{
+              color: rgb(250, 42, 89);
+            }
+            .goods_img{
+              background: url(../images/O1CN015pA4aC1D64Mr5O1WJ_!!166-2-lubanu.png_125x125q90_.webp) no-repeat center;
+              background-size: contain;
+            }
+          }
+        }
+        &:nth-child(4){
+          background: url(../images/TB1G59WmEY1gK0jSZFMXXaWcVXa-255-60.png) no-repeat 0 0;
+          background-size: 255rem * 0.7 / @baseFont 60rem * 0.7 / @baseFont;
+          .module_intro{
+            background-color: rgb(255, 248, 243);
+            margin-left: 10rem / @baseFont;
+            .module_title{
+              color: rgb(255, 76, 9);
+            }
+            .goods_img{
+              background: url(../images/O1CN01NodThv2JUhXbHcR5E_!!0-juitemmedia.jpg_125x125q90_.webp) no-repeat center;
+              background-size: contain;
+            }
+          }
+        }
+        &:nth-child(5){
+          width: 70%;
+          padding-top: 35rem / @baseFont;
+          background: url(../images/TB1lfyQmpY7gK0jSZKzXXaikpXa-525-60.png) no-repeat 0 0;
+          background-size: 525rem * 0.7 / @baseFont 60rem * 0.7 / @baseFont;
+          .module_intro{
+            .module_title{
+              color: rgb(249, 165, 0);
+              font-weight: normal;
+              margin-left: -12rem / @baseFont;
+            }
+            .goods_img{
+              background: url(../images/O1CN01dSdHjc1DFEHhlvrXi_!!186-2-lubanu.png_125x125q90_.webp) no-repeat center;
+              background-size: contain;
+            }
+          }
+        }
+        &:nth-child(6){
+          position: absolute;
+          bottom: 10rem / @baseFont;
+          right: 0;
+          .module_intro{
+            width: 140rem / @baseFont;
+            .goods_img{
+              width: 100%;
+              height: 100%;
+              background: url(../images/O1CN01luDDit1DLdka5l7U9_!!200-0-lubanu.jpg_180x180q90_.webp) no-repeat center;
+              background-size: contain;
+            }
+          }
+        }
+      }
+    }
+    .goods_modules_right{
+      .bigModule{
+        width: 100%;
+        height: 242rem / @baseFont;
+        position: relative;
+        .module_item{
+          &:nth-child(1){
+            width: 70%;
+            padding-top: 35rem / @baseFont;
+            position: relative;
+            z-index: 2;
+            background: url(../images/TB1MfTtQrrpK1RjSZTEXXcWAVXa-525-60.png) no-repeat 0 0;
+            background-size: 525rem * 0.7 / @baseFont 60rem * 0.7 / @baseFont;
+            .module_intro{
+              background-color: #fff;
+              .module_title{
+                color: rgb(255, 80, 125);
+                font-weight: normal;
+                margin-left: -12rem / @baseFont;
+              }
+              .goods_img{
+                background: url(../images/O1CN01ByjJIa1CYAzgQ0Buw_!!92-2-lubanu.png_125x125q90_.webp) no-repeat center;
+                background-size: contain;
+              }
+            }
+          }
+          &:nth-child(2){
+            width: 160rem / @baseFont;
+            position: absolute;
+            bottom: 20rem / @baseFont;
+            right: 0;
+            z-index: 0;
+            .module_intro{
+              width: 140rem / @baseFont;
+              background-color: #fff;
+              .goods_img{
+                width: 100%;
+                height: 100%;
+                background: url(../images/O1CN01p2nz581CP0zt5tcHA_!!72-0-lubanu.jpg_180x180q90_.webp) no-repeat center;
+                background-size: contain;
+              }
+            }
+          }
+        }
+        &:nth-child(2){
+          .module_item{
+            &:nth-child(1){
+              background: url(../images/TB1Cbq1mrj1gK0jSZFuXXcrHpXa-525-60.png) no-repeat 0 0;
+              background-size: 525rem * 0.7 / @baseFont 60rem * 0.7 / @baseFont;
+              .module_intro{
+                .module_title{
+                  color: rgb(80, 189, 255);
+                }
+                .goods_img{
+                  background: url(../images/O1CN01md6YAi1C5K1df8mmH_!!29-2-lubanu.png_125x125q90_.webp) no-repeat center;
+                  background-size: contain;
+                }
+              }
+            }
+            &:nth-child(2){
+              .module_intro{
+                .goods_img{
+                  background: url(../images/O1CN01TTPXt61CEwI7kY8yh_!!50-0-lubanu.jpg_180x180q90_.webp) no-repeat center;
+                  background-size: contain;
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(3){
+          .module_item{
+            &:nth-child(1){
+              background: url(../images/TB1jkazoAL0gK0jSZFAXXcA9pXa-525-60.png) no-repeat 0 0;
+              background-size: 525rem * 0.5 / @baseFont 60rem * 0.5 / @baseFont;
+              .module_intro{
+                .module_title{
+                  color: rgb(255, 97, 29);
+                }
+                .goods_img{
+                  background: url(../images/O1CN01Lv2zpS1CkXhWhzzfk_!!119-2-lubanu.png_125x125q90_.webp) no-repeat center;
+                  background-size: contain;
+                }
+              }
+            }
+            &:nth-child(2){
+              .module_intro{
+                .goods_img{
+                  background: url(../images/O1CN01u84jnz1CTazTp78rM_!!82-0-lubanu.jpg_180x180q90_.webp) no-repeat center;
+                  background-size: contain;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .goods_modules_bottom{
+      a{
+        display: block;
+        width: 100%;
+        height: 66rem / @baseFont;
+        border-top: 1rem / @baseFont solid #eee;
+        background: url(../images/TB1E8zAQAPoK1RjSZKbXXX1IXXa-192-60.png) no-repeat 20rem / @baseFont center;
+        background-size: 192rem * 0.7 / @baseFont 60rem * 0.7 / @baseFont;
+        padding-left: 180rem / @baseFont;
+        line-height: 66rem / @baseFont;
+        .modules_tag{
+          float: left;
+          width: 50rem / @baseFont;
+          height: 20rem / @baseFont;
+          margin-top: 25rem / @baseFont;
+          color: #e86217;
+          font-size: 24rem / @baseFont;
+          line-height: 16rem / @baseFont;
+          margin-right: 20rem / @baseFont;
+          background-color: #feefec;
+          border-radius: 4rem / @baseFont;
+          white-space: nowrap;
+        }
+        .modules_title{
+          float: left;
+          width: 300rem / @baseFont;
+          color: #3b2626;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-size: 24rem / @baseFont;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  // recommend(推荐)部分
+  .recommend{
+    overflow: hidden;
+    padding: 0 24rem / @baseFont;
+    .recommend_bg{
+      width: 15rem;
+      height: 42rem / @baseFont;
+      padding: 24rem / @baseFont 0;
+      background: transparent url(../images/TB1V2eQrKSSBuNjy0FlXXbBpVXa-966-114.png) no-repeat center;
+      background-size: 322rem / @baseFont 38rem / @baseFont;
+    }
+    .recommend_item{
+      float: left;
+      width: 342rem / @baseFont;
+      height: 520rem / @baseFont;
+      border-radius: 20rem / @baseFont;
+      overflow: hidden;
+      background-color: #fff;
+      margin-bottom: 18rem / @baseFont;
+
+      img{
+        width: 100%;
+        height: 342rem / @baseFont;
+      }
+      &:nth-child(2n){
+        margin-left: 18rem / @baseFont;
+      }
+      .recommend_title{
+        width: 304rem / @baseFont;
+        height: 60rem  / @baseFont;
+        margin: 20rem / @baseFont auto 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 26rem / @baseFont;
+        color: #333;
+      }
+      .recommend_price_box{
+        width: 304rem / @baseFont;
+        height: 30rem  / @baseFont;
+        margin: 20rem / @baseFont auto 0;
+        .recommend_sign{
+          color: #ff5500;
+          font-size:  22rem / @baseFont;
+          line-height: 40rem / @baseFont;
+        }
+        .recommend_price{
+          color: #ff5500;
+          font-size: 28rem / @baseFont;
+          line-height: 32rem / @baseFont;
+          margin-left: -8rem / @baseFont;
+        }
+        .recommend_buyed{
+          font-size: 22rem / @baseFont;
+          color: #999;
+        }
+      }
+    }
+  }
+
+  // login部分
+  .login{
+    width: 15rem;
+    margin-top: 20px;
+    padding: 20px 0 56px;
+    background-color: rgb(78, 82, 94);
+    .loginTop{
+      height: 35px;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20rem / @baseFont;
+      a{
+        display: inline-block;
+        height: 35px;
+        line-height: 35px;
+        color: rgb(195, 198, 202);
+        border: 1px solid rgb(66, 69, 77);
+        background-color: rgb(85, 89, 101);
+        padding: 0px 17px;
+        border-radius: 6px;
+        font-size: 14px;
+      }
+    }
+    .loginBottom{
+      color: rgb(195, 198, 202);
+      font-size: 12rem / @baseFont;
+      height: 30px;
+      padding-top: 20rem / @baseFont;
+      text-align: center;
+      img{
+        display: inline-block;
+        width: 20rem / @baseFont;
+        height: 20rem / @baseFont;
+        vertical-align: middle;
+      }
+      a{
+        color: rgb(195, 198, 202);
+      }
+    }
+  }
+
+  // footer部分
+  footer{
+    width: 15rem;
+    height: 39px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #f8f8f8;
+    box-sizing: border-box;
+    a{
+      display: inline-block;
+      padding: 0 20px;
+      font-size: 14rem / @baseFont;
+      color: #5d656b;
+      text-align: center;
+      .iconfont{
+        width: 30rem / @baseFont;
+        font-size: 18px;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  // 返回顶部  && 打开淘宝App
+  .skipTop{
+    width: 15rem;
+    position: fixed;
+    bottom: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+    a:first-child{
+      display: none;
+      position: absolute;
+      right: 20rem / @baseFont;
+      bottom: 0;
+      width: 42px;
+      height: 42px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: #fff;
+      border: 1px solid rgb(204, 204, 204);
+      font-size: 12px;
+      color: rgb(153, 153, 153);
+      .iconfont{
+        font-size: 20px;
+      }
+      z-index: 9;
+    }
+    a:last-child{
+      display: block;
+      width: 55px;
+      position: absolute;
+      bottom: 70px;
+      right: 18rem / @baseFont;
+      height: 70px;
+      border-radius: 5px;
+      background: url(../images/TB1FjNySpXXXXc8aXXXXXXXXXXX-200-200.png) no-repeat center top;
+      background-size: 44px 44px;
+      span{
+        width: 55px;
+        height: 15px;
+        background: linear-gradient(to top right, #FF9500, #ff5000);
+        border-radius: 4px;
+        font-size: 8px;
+        line-height: 15px;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      z-index: 9;
+    }
+  }
+}
+
+
+
+
+

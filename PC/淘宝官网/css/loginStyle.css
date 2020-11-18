@@ -1,0 +1,344 @@
+.partner .partner_list:nth-child(2) {
+    border-top: 1px solid #ddd;
+    border-bottom: none;
+    padding-bottom: 0;
+    padding-top: 4px;
+}
+.partner .partner_list:first-child {
+    border-top: 1px solid #ddd;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.footer{
+    margin: 0;
+}
+.partner{
+    height: 270px;
+    background-color: #fff;
+    padding-top: 50px;
+}
+.nav{
+    height: 88px;
+    background-color: #fff;
+    padding: 30px 0 0 0;
+}
+.nav .w{
+    height: 88px;
+    overflow: hidden;
+    position: relative;
+}
+.logo_login img{
+    width: 110px;
+    height: 40px;
+}
+.logo_login,.text_login{
+    float: left;
+}
+.text_login{
+    width: 880px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 6px 10px;
+    background-color: #fef2f2;
+    border: 1px solid #ffb4a8;
+}
+.logo_login{
+    margin-right: 100px;
+}
+.website_suggest{
+    height: 32px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    line-height: 44px;
+    color: #666;
+    font-size: 12px;
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'suggest_ico';
+    src: url('../font/font_suggest/iconfont.eot');
+    src: url('../font/font_suggest/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/font_suggest/iconfont.woff2') format('woff2'),
+        url('../font/font_suggest/iconfont.woff') format('woff'),
+        url('../font/font_suggest/iconfont.ttf') format('truetype'),
+        url('../font/font_suggest/iconfont.svg#iconfont') format('svg');
+}
+.suggest_ico {
+    font-family: "suggest_ico" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.suggest_ico{
+    color: #ff5000;
+}
+
+.content{
+    width: 100%;
+    height: 600px;
+    background: url(../images/TB1GTCYLXXXXXcHXpXXcoeQ2VXX-2500-600.jpg) no-repeat -490px 0;
+}
+.content .w{
+    position: relative;
+}
+.content .w > a{
+    display: inline-block;
+    width: 630px;
+    height: 440px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+}
+.action_wrap{
+    position: absolute;
+    top: 120px;
+    right: 60px;
+    width: 320px;
+    height: 350px;
+    background-color: rgba(255, 255, 255, .9);
+}
+.action_wrap .hd{
+    height: 18px;
+    line-height: 18px;
+    font-size: 16px;
+    color: #3c3c3c;
+    margin-top: 9px;
+    padding-bottom: 8px;
+    font-weight: 700;
+    margin-top: 35px;
+}
+.action_wrap{
+    padding-left: 30px;
+}
+#user_name,#pwd{
+    width: 240px;
+    font-size: 14px;
+    line-height: 18px;
+    height: 18px;
+    padding: 11px 8px 11px 50px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    background-color: #fff;
+}
+#sbt{
+    width: 300px;
+    height: 42px;
+    border: 0;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    line-height: 42px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background: #f40;
+    border-radius: 3px;
+    cursor: pointer;
+    zoom: 1;
+    margin-top: 20px;
+}
+.fm_item .erweima{
+    width: 140px;
+    margin: 30px 0 0 80px;
+}
+.phonelogin{
+    width: 188px;
+    margin: 30px auto 0;
+}
+@font-face {
+  font-family: 'saoma_ico';
+  src: url('../font/font_saoma/iconfont.eot');
+  src: url('../font/font_saoma/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../font/font_saoma/iconfont.woff2') format('woff2'),
+      url('../font/font_saoma/iconfont.woff') format('woff'),
+      url('../font/font_saoma/iconfont.ttf') format('truetype'),
+      url('../font/font_saoma/iconfont.svg#iconfont') format('svg');
+}
+.saoma_ico {
+  font-family: "saoma_ico" !important;
+  font-size: 30px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+  color: #ff4400;
+  font-weight: 700;
+  margin-right: 4px;
+}
+.phonelogin p{
+    width: 140px;
+    display: inline-block;
+    color: #9c9c9c;
+    font-size: 12px;
+    line-height: 16px
+}
+.phonelogin a{
+    color: #ff4400;
+}
+.other_login{
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+}
+.other_login a{
+    font-size: 12px;
+    margin: 0 5px;
+}
+.computer_login{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    z-index: 200;
+}
+@font-face {
+  font-family: 'computer_ico';
+  src: url('../font/font_computer/iconfont.eot');
+  src: url('../font/font_computer/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../font/font_computer/iconfont.woff2') format('woff2'),
+      url('../font/font_computer/iconfont.woff') format('woff'),
+      url('../font/font_computer/iconfont.ttf') format('truetype'),
+      url('../font/font_computer/iconfont.svg#iconfont') format('svg');
+}
+.computer_ico {
+  font-family: "computer_ico" !important;
+  font-size: 52px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  line-height: 52px;
+  color: #f40;
+}
+.cover_pc{
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    width: 0;
+    height: 0;
+    border-width: 22px;
+    border-style: solid;
+    border-color: transparent transparent #e9e9f2 #e9e9f2;
+}
+@font-face {
+  font-family: 'soft_ico';
+  src: url('../font/font_softico/iconfont.eot');
+  src: url('../font/font_softico/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../font/font_softico/iconfont.woff2') format('woff2'),
+      url('../font/font_softico/iconfont.woff') format('woff'),
+      url('../font/font_softico/iconfont.ttf') format('truetype'),
+      url('../font/font_softico/iconfont.svg#iconfont') format('svg');
+}
+.soft_ico {
+  font-family: "soft_ico" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 5px;
+}
+.sina_ico{
+  color: #e52425;
+}
+.zhifubao_ico{
+    color: #1ba9ee;
+}
+.soft_login{
+    margin-top: 20px;
+}
+.soft_login a{
+    font-size: 12px;
+    line-height: 20px;
+}
+.soft_login a:first-child{
+    margin-right: 10px;
+}
+#user_name{
+    background: #fff url(../images/user.png) no-repeat 1px 0;
+    background-size: 39px;
+    color: #999;
+}
+#pwd{
+    background: #fff url(../images/pwd.png) no-repeat 1px 0;
+    background-size: 39px 41px;
+}
+@font-face {
+  font-family: 'erweima_ico';
+  src: url('../font/font_erweimalogin/iconfont.eot');
+  src: url('../font/font_erweimalogin/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../font/font_erweimalogin/iconfont.woff2') format('woff2'),
+      url('../font/font_erweimalogin/iconfont.woff') format('woff'),
+      url('../font/font_erweimalogin/iconfont.ttf') format('truetype'),
+      url('../font/font_erweimalogin/iconfont.svg#iconfont') format('svg');
+}
+.erweima_ico {
+  font-family: "erweima_ico" !important;
+  font-size: 52px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: block;
+  line-height: 52px;
+  color: #f40;
+}
+.warning{
+    position: absolute;
+    top: 5px;
+    right: 70px;
+    border: 1px solid #f3d995;
+    height: 16px;
+    line-height: 16px;
+    padding: 5px 20px 5px 15px;
+    background: #fefcee;
+}
+.warning p{
+    width: 110px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #df9c1f;
+}
+@font-face {
+  font-family: 'protect_ico';
+  src: url('../font/font_protect/iconfont.eot');
+  src: url('../font/font_protect/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('../font/font_protect/iconfont.woff2') format('woff2'),
+      url('../font/font_protect/iconfont.woff') format('woff'),
+      url('../font/font_protect/iconfont.ttf') format('truetype'),
+      url('../font/font_protect/iconfont.svg#iconfont') format('svg');
+}
+.protect_ico {
+  font-family: "protect_ico" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 7px;
+}
+.box_arrow{
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  margin-top: -10px;
+  width: 0px;
+  height: 0px;
+  border-width: 11px;
+  border-style: solid;
+  border-color: transparent transparent transparent #f3d995;
+}
+.box_arrow span{
+  position: absolute;
+  right: -9px;
+  top: 50%;
+  margin-top: -10px;
+  width: 0px;
+  height: 0px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent #fefcee;
+}
+.hidden{
+  display: none;
+}
